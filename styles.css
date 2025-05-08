@@ -1,0 +1,286 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+  }
+  
+  /* Header and Video Background */
+  .header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  .overlay {
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    margin-left: 1.5rem;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f0c040;
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: slideUp 1.2s ease-in-out;
+  }
+  
+  .btn-secondary {
+    background-color: #f0c040;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e0b030;
+  }
+  
+  /* Parallax Section Style */
+  .section-parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .section-light {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .service-cards, .team-cards, .blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service-card, .team-card, .blog-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover, .team-card:hover, .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  blockquote {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  cite {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Contact Form */
+  .contact-section form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-section input,
+  .contact-section textarea {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-section button {
+    background-color: #f0c040;
+    border: none;
+    padding: 0.75rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-section button:hover {
+    background-color: #e0b030;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #222;
+    color: #ccc;
+    padding: 2rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .footer-links ul,
+  .footer-social ul {
+    list-style: none;
+  }
+  
+  .footer-links li,
+  .footer-social li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer a {
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .footer a:hover {
+    color: #f0c040;
+  }
+  
+  .footer-newsletter input {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .footer-newsletter button {
+    padding: 0.5rem 1rem;
+    background: #f0c040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-newsletter button:hover {
+    background: #e0b030;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Accessibility */
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #f0c040;
+    outline-offset: 2px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .nav-links a {
+      display: block;
+      margin: 0.5rem 0;
+    }
+  
+    .service-cards, .team-cards, .blog-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
