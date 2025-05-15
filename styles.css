@@ -79,6 +79,7 @@
   .header-content {
     margin-top: 8rem;
     text-align: left;
+    max-width: 600px;
   }
   
   .header-content h1 {
@@ -119,6 +120,7 @@
   .services-header .complement {
     color: #000;
     max-width: 400px;
+    text-align: left;
   }
 
   .section-parallax {
@@ -169,6 +171,18 @@
     margin-bottom: 1rem;
   }
 
+  .why .benefits {
+    display: flex;
+  }
+
+  .why ul li {
+    background: #F5F4F4;
+    margin: 5px;
+    list-style: none;
+    max-width: 200px;
+    padding: 4px;
+  }
+
   .opinion {
     color: #000;
     display: flex;
@@ -193,6 +207,15 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+  }
+
+  .team-cards img {
+    max-width: 600px;
+  }
+
+  .service-cards img {
+    width: 300px;
+    border-radius: 23px;
   }
 
   .service-cards .description {
@@ -243,6 +266,20 @@
   }
   
   /* Contact Form */
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .contact-section .contact {
+    max-width: 400px;
+  }
+
+  .contact-section .find-us {
+    text-align: left;
+  }
+
   .contact-section form {
     max-width: 600px;
     margin: auto;
@@ -270,6 +307,13 @@
   .contact-section button:hover {
     background-color: #e0b030;
   }
+
+  .contact-section .card-info {
+    background-color: #bdbdbd;
+    margin-bottom: 10px;
+    width: 400px;
+    padding: 10px;
+  }
   
   /* Footer */
   .footer {
@@ -280,9 +324,12 @@
   
   .footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
+  }
+
+  .footer-container .description {
+    max-width: 400px;
   }
   
   .footer-links ul,
