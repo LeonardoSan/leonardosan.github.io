@@ -53,7 +53,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 2rem;
     animation: fadeIn 1.5s ease-in-out;
   }
@@ -74,6 +74,11 @@
   
   .nav-links a:hover {
     color: #f0c040;
+  }
+
+  .header-content {
+    margin-top: 8rem;
+    text-align: left;
   }
   
   .header-content h1 {
@@ -102,6 +107,20 @@
   }
   
   /* Parallax Section Style */
+  h2 {
+    color: #000;
+  }
+
+  .services-header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .services-header .complement {
+    color: #000;
+    max-width: 400px;
+  }
+
   .section-parallax {
     background-attachment: fixed;
     background-size: cover;
@@ -117,13 +136,83 @@
     padding: 4rem 2rem;
     text-align: center;
   }
+
+  .solutions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .solutions .description {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .solutions .description h2 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .why {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .why .description {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .why .description h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .opinion {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .opinion .description {
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .opinion .description h2 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
   
   .service-cards, .team-cards, .blog-cards {
+    color: #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+  }
+
+  .service-cards .description {
+    margin-top: 1rem;
+    max-width: 300px;
+    text-align: left;
+  }
+
+  .service-cards .btn-secondary {
+    background-color: #fff;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .service-cards .btn-secondary:hover {
+    background-color: #e0b030;
+    color: #fff;
   }
   
   .service-card, .team-card, .blog-card {
