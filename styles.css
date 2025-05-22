@@ -93,6 +93,50 @@
     margin-bottom: 2rem;
     animation: slideUp 1.2s ease-in-out;
   }
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  color: #fff;
+  margin-left: 1.5rem;
+  transition: color 0.3s;
+  padding: 0.5rem 0;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #222;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0c040;
+  color: black;
+}
+
+
   
   .btn-secondary {
     background-color: #f0c040;
@@ -274,6 +318,7 @@
 
   .contact-section .contact {
     max-width: 400px;
+    text-align: left;
   }
 
   .contact-section .find-us {
@@ -313,6 +358,10 @@
     margin-bottom: 10px;
     width: 400px;
     padding: 10px;
+  }
+
+  .contact-section .submit {
+    max-width: 160px;
   }
   
   /* Footer */
